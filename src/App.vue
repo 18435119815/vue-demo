@@ -1,17 +1,20 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    首页
+    {{price | langChange('RMB')}}
     <router-view/>
   </div>
 </template>
 
 <script>
-import "common/mixin.js"
 export default {
-  
+  data(){
+    return{
+      price:10
+    }
+  },
+  mounted(){
+  }
 }
 </script>
 

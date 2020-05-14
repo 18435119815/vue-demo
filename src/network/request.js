@@ -9,3 +9,13 @@ export function request(config) {
 
     return instance(config)
 }
+
+export function text(config) {
+    let instance = axios.create({
+        baseURL: "",
+        timeout: 2000
+    })
+
+
+    return instance(config)
+}

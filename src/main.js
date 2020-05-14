@@ -3,10 +3,15 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import axios from 'axios'
-import {request} from 'network/request'
+import {request,text} from 'network/request'
 
 Vue.config.productionTip = false
-    // Vue.prototype.axios = axios
+// Vue.prototype.axios = axios
+
+//过滤器
+Vue.filter('langChange',(msg,arg)=>{
+    return msg+'元'+arg 
+})
 
 new Vue({
     router,
@@ -16,8 +21,10 @@ new Vue({
 
 
 request({
-   url: "/navList"
+   url: "/navList",
 })
 .then(res => {
     console.log(res);
 })
+
+
