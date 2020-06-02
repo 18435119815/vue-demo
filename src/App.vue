@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    首页
-    {{price | langChange('RMB')}}
+    <!-- 首页
+    {{price | langChange('RMB')}} -->
     <router-view/>
   </div>
 </template>
