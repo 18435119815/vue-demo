@@ -2,17 +2,21 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import axios from 'axios'
+import axios from './network/request'
 import {request,text} from 'network/request'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
+//引入Mock
+require('./mock/index')
 
 Vue.config.productionTip = false
-// Vue.prototype.axios = axios
+//挂载axios
+Vue.prototype.axios = axios
+//使用ElementUI
 Vue.use(ElementUI);
 
 
-//过滤器
+//全局过滤器
 Vue.filter('langChange',(msg,arg)=>{
     return msg+'元'+arg 
 })

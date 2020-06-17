@@ -11,6 +11,7 @@
     "core-js": "^3.6.4",
     "element-ui": "^2.13.2",
     "sass-loader": "^8.0.2",
+    "true-case-path": "^2.2.1",
     "vue": "^2.6.11",
     "vue-baidu-map": "^0.21.22",
     "vue-router": "^3.1.6",
@@ -21,6 +22,7 @@
     "@vue/cli-service": "^4.3.0",
     "less": "^3.0.4",
     "less-loader": "^5.0.0",
+    "mockjs": "^1.1.0",
     "vue-template-compiler": "^2.6.11"
   },
   "browserslist": [

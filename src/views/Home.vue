@@ -170,6 +170,9 @@ export default {
     },
     lagChange(index) {
       this.lagActive = index;
+      this.axios.post('/loginData').then(res=>{
+        console.log(res)
+      }).catch(err=>{console.log(1)})
     },
     footChange(item) {
       this.footActive = item.index;

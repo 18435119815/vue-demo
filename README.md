@@ -1,16 +1,16 @@
-# laocheng_vue
+# vue基础配置练习
 
-## Project setup
+## 下载配置
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### 运行项目
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### 打包
 ```
 npm run build
 ```
